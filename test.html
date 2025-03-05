@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Game Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: black;
+            color: white;
+            text-align: center;
+        }
+        header, section, footer {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .game-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .game-card {
+            border: 2px solid white;
+            padding: 10px;
+            width: 200px;
+        }
+        button {
+            background: none;
+            color: white;
+            border: 2px solid white;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>COOL GAME HUB</h1>
+        <nav>
+            <ul>
+                <li><a href="#games">GAMES</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="games">
+        <h2>FEATURED GAMES</h2>
+        <div class="game-container">
+            <div class="game-card">
+                <h3>GAME 1</h3>
+                <p>ACTION-PACKED ADVENTURE</p>
+                <button>PLAY</button>
+            </div>
+            <div class="game-card">
+                <h3>GAME 2</h3>
+                <p>STRATEGY & SKILLS</p>
+                <button>PLAY</button>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>ABOUT</h2>
+        <p>THE BEST ONLINE GAMES. PLAY NOW.</p>
+    </section>
+    <section id="contact">
+        <h2>CONTACT</h2>
+        <p>support@coolgamehub.com</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 COOL GAME HUB</p>
+    </footer>
+</body>
+</html>
