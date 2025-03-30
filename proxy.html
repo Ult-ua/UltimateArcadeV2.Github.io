@@ -1,23 +1,63 @@
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+thx to @bryce2372 on discord 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultimate | Proxy</title>
-    <link rel="icon" type="image/x-icon" href="/storage/images/main/favicon.ico">
-    <link rel="stylesheet" href="style.css">">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proxy - Ultimate Arcade</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #006400; /* Darker green */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #004d00; /* Even darker on hover */
+}
+</style>
 </head>
 <body>
-    <div id="loading-screen">
-        <div class="dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-        <h5 id="fetching-text">Fetching assets</h5>
-    </div>
-    <h1>hi</h1>
-    <p>hi.</p>
-    <button>Click Me</button>
+  <header>
+    <h1>hi mom</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gs.html">Games</a></li>
+        <li><a href="proxy.html" class="active">Proxy</a></li>
+        <li><a href="links.html">Links</a></li>
+        <li><a href="partners.html">Partners</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="proxy" class="section">
+      <div style="position: relative;">
+        <form id="uv-form">
+          <input id="uv-search-engine" value="https://duckduckgo.com/?t=h_&q=%s&ia=web" type="hidden" />
+          <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input" />
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 hi dad All rights reserved.</p>
+  </footer>
+      <script src="static/uv/uv.bundle.js" defer></script>
+      <script src="static/uv/uv.config.js" defer></script>
+      <script src="static/register-sw.js" defer></script>
+      <script src="static/search.js" defer></script>
+      <script src="static/index.js" defer></script>
+      <script src="script.js"></script>
 </body>
 </html>
