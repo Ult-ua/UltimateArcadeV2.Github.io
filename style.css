@@ -19,6 +19,36 @@ p {
     font-size: 1rem;
     margin-top: 10px;
 }
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.nav-button i {
+    transition: color 0.3s ease;
+}
+
+.nav-button:hover i {
+    color: #ffcc00;
+}
+
+body {
+    padding-top: 50px; /* Adjust to avoid content being hidden under navbar */
+}
 
 button {
     background-color: #222;
