@@ -8,7 +8,7 @@
         function redirect() {
             let input = document.getElementById("userInput").value;
             let urlPattern = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([\/\w .-]*)*\/?$/;
-            let baseURL = "/UltimateArcadeV2.Github.io/active/embed.html?url=";
+            let baseURL = "/active/embed.html?url=";
             
             if (urlPattern.test(input)) {
                 window.location.href = baseURL + encodeURIComponent(input);
